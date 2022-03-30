@@ -1,0 +1,28 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+}
+
+.kitty-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kitty-item {
+  width: 10vw;
+  height: 10vw;
+  // overflow: hidden;
+
+  &:hover img {
+    transform: scale3d(1.1,1.1,1.0);
+    transition: transform 0.4s;
+  }
+
+  img {
+    transition: transform 1.0s;
+    width: 100%;
+    height: auto;
+  }
+}
